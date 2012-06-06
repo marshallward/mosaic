@@ -1,4 +1,4 @@
-Posaic
+Mosaic
 ======
 
 A python implementation of some of the FMS mosaic tools. Mostly to supplment
