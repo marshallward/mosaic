@@ -17,7 +17,10 @@ Contact:    Marshall Ward (marshall.ward@anu.edu.au)
 def save(zeta, grid_name=None):
     
     history = ' '.join(sys.argv)
-    
+   
+    # Get nzv from zeta:
+    nzv = zeta.size
+
     # Default tags
     if not grid_name:
         grid_name = 'vertical_grid.nc'
