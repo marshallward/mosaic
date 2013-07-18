@@ -13,7 +13,7 @@ def grid(lat_min, lat_max, lon_min, lon_max, d_lat, dense_grid=True):
     d_lon = d_lat
     
     N_lat = int(1 + np.round((lat_max - lat_min)/d_lat))
-    lat_axis = np.linspace(lat_min, lat_max, N_lat)
+    lat_axis = np.deg2rad(np.linspace(lat_min, lat_max, N_lat))
     
     N_lon = int(1 + np.round((lon_max - lon_min)/d_lon))
     lon_axis = np.deg2rad(np.linspace(lon_min, lon_max, N_lon))
